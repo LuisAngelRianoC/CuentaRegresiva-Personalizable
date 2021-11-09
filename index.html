@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Evento Personalizable</title>
+    <link rel="shortcut icon" href="img/calendar-alt-regular.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h3 class="title">Tiempo para el evento:</h3>
+            <p class="descripcion">Con esta sencilla app podras calculcar cuanto tiempo falta para alguna fecha especial o cuatno tiempo paso, usa el formato de fecha: dd-mm-yyy. <br><span>Ejemplo: 12-12-21</span></p>
+            <div class="temporizador">
+                <div class="box">
+                    <h3 id="d">00</h3>
+                    <p>Dias</p>
+                </div>
+                <div class="box">
+                    <h3 id="hrs">00</h3>
+                    <p>Horas</p>
+                </div>
+                <div class="box">
+                    <h3 id="min">00</h3>
+                    <p>Minutos</p>
+                </div>
+                <div class="box">
+                    <h3 id="seg">00</h3>
+                    <p>Seguntos</p>
+                </div>
+            </div>
+        <div class="event">
+            <label>Fecha</label>
+            <input type="date" id="fecha" oninput="getValueInput()">
+            <p id="valueInput"></p> 
+        </div>
+        <a href="#" class="btn"  onclick=""> Agendar </a>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
